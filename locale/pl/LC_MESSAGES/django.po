@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-11 13:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: .\csvs\templates\csvs\upload.html:23 .\dj_pd\views.py:80
+#: .\templates\navbar.html:36
+msgid "uploads"
+msgstr "wczytaj"
+
+#: .\csvs\templates\csvs\upload.html:27
+msgid "add data"
+msgstr "dodaj dane"
+
+#: .\customers\templates\customers\main.html:8
+msgid "Correllation"
+msgstr "Korelacja"
+
+#: .\dj_pd\settings.py:141
+msgid "English"
+msgstr ""
+
+#: .\dj_pd\settings.py:142
+msgid "Polish"
+msgstr ""
+
+#: .\dj_pd\views.py:73 .\templates\navbar.html:45
+msgid "login"
+msgstr "zaloguj"
+
+#: .\dj_pd\views.py:74 .\templates\navbar.html:15
+msgid "home"
+msgstr "start"
+
+#: .\dj_pd\views.py:75 .\templates\navbar.html:19
+msgid "performance"
+msgstr "wyniki sprzedaży"
+
+#: .\dj_pd\views.py:76 .\templates\navbar.html:22
+msgid "sales"
+msgstr "sprzedaż"
+
+#: .\dj_pd\views.py:77 .\templates\navbar.html:25
+msgid "customers"
+msgstr "klienci"
+
+#: .\dj_pd\views.py:78
+msgid "all records"
+msgstr "wszyskie rekordy"
+
+#: .\dj_pd\views.py:79 .\templates\navbar.html:32
+msgid "add new product"
+msgstr "dodaj nowy produkt"
+
+#: .\dj_pd\views.py:81 .\products\templates\products\main.html:54
+msgid "choose a chart type"
+msgstr "wybierz typ wykresu"
+
+#: .\dj_pd\views.py:82
+msgid "Date from"
+msgstr "Data od"
+
+#: .\dj_pd\views.py:83
+msgid "Date to"
+msgstr "Data do"
+
+#: .\dj_pd\views.py:84 .\products\templates\products\main.html:83
+msgid "See Summary"
+msgstr "Podsumowanie"
+
+#: .\dj_pd\views.py:85 .\products\templates\products\main.html:79
+msgid "select"
+msgstr "wybierz"
+
+#: .\dj_pd\views.py:86 .\products\templates\products\main.html:86
+#: .\templates\navbar.html:28
+msgid "add records"
+msgstr "dodaj sprzedaż"
+
+#: .\dj_pd\views.py:87 .\products\templates\products\main.html:60
+msgid "Bar plot"
+msgstr "Wykres słupkowy"
+
+#: .\dj_pd\views.py:88 .\products\templates\products\main.html:61
+msgid "Line plot"
+msgstr "Wykres liniowy"
+
+#: .\dj_pd\views.py:89 .\products\templates\products\main.html:62
+msgid "Count plot"
+msgstr "Liczenie produktów"
+
+#: .\dj_pd\views.py:90
+msgid "total price by day(bar)"
+msgstr "całkowita cena sprzedaży na dzień"
+
+#: .\dj_pd\views.py:91
+msgid "customer data"
+msgstr "dane klienta"
+
+#: .\dj_pd\views.py:92
+msgid "Correlation"
+msgstr "Korelacja"
+
+#: .\dj_pd\views.py:93 .\dj_pd\views.py:101
+#: .\products\templates\products\add.html:19
+msgid "Add sale data"
+msgstr "Dodaj sprzedaż"
+
+#: .\dj_pd\views.py:94 .\products\templates\products\add_product.html:19
+msgid "Add product"
+msgstr "Dodaj produkt"
+
+#: .\dj_pd\views.py:95 .\products\templates\products\main.html:21
+msgid "Price data"
+msgstr "Szczegóły ceny"
+
+#: .\dj_pd\views.py:96 .\products\templates\products\main.html:24
+msgid "Count"
+msgstr "Policz"
+
+#: .\dj_pd\views.py:97 .\products\templates\products\main.html:25
+msgid "Mean"
+msgstr "Średnia"
+
+#: .\dj_pd\views.py:98 .\products\templates\products\main.html:26
+msgid "Median"
+msgstr "Mediana"
+
+#: .\dj_pd\views.py:99 .\products\templates\products\main.html:29
+msgid "Std dev"
+msgstr "Odchylenie standardowe"
+
+#: .\dj_pd\views.py:100 .\products\templates\products\sales.html:8
+msgid "Sales"
+msgstr "Sprzedaż"
+
+#: .\products\templates\products\main.html:69
+msgid "date from"
+msgstr "data od"
+
+#: .\products\templates\products\main.html:73
+msgid "date to"
+msgstr "data do"
+
+#: .\templates\login.html:19
+msgid "Login"
+msgstr "Zaloguj"
+
+#: .\templates\navbar.html:40
+msgid "logout"
+msgstr "wyloguj"

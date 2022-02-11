@@ -1,0 +1,94 @@
+{#    <h1>Hello world</h1>#}
+{#    {{ products| safe }}#}
+{#    <hr>#}
+{#    {{ purchases | safe }}#}
+{#    <hr>#}
+{#    https://semantic-ui.com/introduction/getting-started.html         (form)#}
+{#      https://semantic-ui.com/collections/message.html #}
+{#{% if df %}#}
+{#{{ df | safe}}#}
+{#{% endif %}#}
+{#    safe odczytuje w widoku tagi html#}
+
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}performance{% endblock title %}
+
+{% block content %}
+
+<div class="ui modal mymodal">
+    <div class="header"><h1>{% trans 'Price data' %}</h1></div>
+  <div class="ui container">
+    <ul>
+        <li><strong>{% trans 'Count' %}: </strong>{{ price.count }}</li>
+        <li><strong>{% trans 'Mean' %}: </strong>{{ price.mean | floatformat}}</li>
+        <li><strong>{% trans 'Median' %}: </strong>{{ price.median }}</li>
+        <li><strong>Min: </strong>{{ price.min }}</li>
+        <li><strong>Max: </strong>{{ price.max }}</li>
+        <li><strong>{% trans 'Std dev' %}: </strong>{{ price.std|floatformat }}</li>
+    </ul>
+  </div>
+</div>
+<div>
+    <div class="block-center">
+        {% if error_message %}
+            <!-- bez średników -->
+            <div class="ui negative message">
+            <i class="close icon"></i>
+                <div class="header">
+                    {{ error_message }}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if request.POST %}
+        {% if graph %}
+            <img src="data:image/png;base64, {{ graph | safe }}">
+        {% endif %}
+    {% endif %}
+    <form action="" method="post" class="ui form">
+        {% csrf_token %}
+        <div class="field">
+          <!-- bez średników -->
+          <label>{% trans 'choose a chart type' %}: </label>
+          <div class="ui selection dropdown">
+              <input type="hidden" name="sales">
+              <i class="dropdown icon"></i>
+              <div class="default text">-----</div>
+              <div class="menu">
+                  <div class="item" value="bar">Bar plot</div>
+                  <div class="item" value="line">Line plot</div>
+                  <div class="item" value="count">Count plot</div>
+              </div>
+          </div>
+      </div>
+        <div class="field">
+            <div class="two fields">
+                <div class="field">
+                    <label>{% trans 'date from' %}: </label>
+                    <input type="date" name="date_from">
+                </div>
+                <div class="field">
+                    <label>{% trans 'date to' %}: </label>
+                    <input type="date" name="date_to">
+                </div>
+            </div>
+        </div>
+    <div class="block-center">
+    <button class="ui primary button" type="submit">{% trans 'select' %}</button>
+    </div>
+        </form>
+        <div class="block-center">
+        <button class="ui secondary button" id="modal-btn">{% trans 'See Summary' %}</button>
+        </div>
+        <br>
+        <a href={% url 'products:add-purchase-view' %}><button class="ui positive button">{% trans 'add records' %}</button></a>
+    </div>
+</div>
+{% endblock content %}
+
+
+
+
+

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}customer data{% endblock title %}
+
+{% block content %}
+
+    <h1>{% trans 'Correllation' %}: {{ corr }}{{ error_message }}</h1>
+    {% if graph %}
+    <img src="data:image/png; base64, {{ graph| safe }} " class="mtop">
+    {% endif %}
+{% endblock content %}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}upload{% endblock title %}
+
+{% block content %}
+    {% if success_message %}
+    <div class="ui success message">    <!-- !!!!!!-->
+        <i class="close icon"></i>
+        <div class="header">
+            {{ success_message }}
+        </div>
+    </div>
+    {% endif %}
+    {% if error_message %}
+    <div class="ui negative message">
+        <i class="close icon"></i>
+        <div class="header">
+            {{ error_message }}
+        </div>
+    </div>
+    {% endif %}
+    <h1>{% trans 'uploads' %}</h1>
+    <form action="" method="post" enctype="multipart/form-data" class="ui-form">    <!-- multi.. ważne do wczytyw. plików-->
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="ui positive button">{% trans 'add data' %}</button>
+    </form>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

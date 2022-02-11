@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}performance{% endblock title %}
+
+{% block content %}
+    {{ error_message }}
+<h1>{% trans 'Sales' %}</h1>
+    {% if graph %}
+        <div class="block-center">
+            <img src="data:image/png;base64, {{ graph | safe }}">
+        </div>
+    {% endif %}
+{% endblock content %}
