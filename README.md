@@ -1,5 +1,5 @@
 It's a project of Łukasz Makinia, a very good programmer, very good for coding training.
-I made 3 patches for it
+I made 5 patches for it
 
 1. Ability to create a fake data for testing
 2. Improved loading of csv files
