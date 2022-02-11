@@ -1,8 +1,8 @@
-﻿# Django_pandas
-It's a project of Luke, owner of Pyplane, a very good programmer, very good project for coding training. I made 4 patches for it
+It's a project of Łukasz Makinia, a very good programmer, very good for coding training.
+I made 3 patches for it
 
-Ability to create a fake data for testing
-Improved loading of csv files
-Possibility to add a new product from the user level of the program
-Fix view customers graph without data
-Added ability to automatic tranlate application to polisish language
+1 Ability to create a fake data for testing
+2 Improved loading of csv files
+3 Possibility to add a new product from the user level of the program
+4 Fix view customers graph without data
+5 Added ability to automatic tranlate application to polisish language
