@@ -106,10 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-#LOGIN_URL = 'login'
-#blokuje widok loginu
-#np jak wpiszesz http://127.0.0.1:8000/performance  to pojawia się:
-#http://127.0.0.1:8000/login/?next=/performance/
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
@@ -149,11 +146,7 @@ LOCALE_PATHS = (
 #py manage.py startapp lang
 
 #python manage.py makemessages --all
-#zrestaryj terminal
-#po tej komendzie w folderach językowych ładują się dane
-#wpisuje tam np tłumaczenie hello na cześć
-# msgid "hello"
-# msgstr "cześć"
+
 
 #python manage.py compilemessages
 
