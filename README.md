@@ -6,4 +6,4 @@ I made 5 patches for it
 3. Possibility to add a new product from the user level of the program
 4. Fix view customers graph without data
 5. Added ability to automatic tranlate application to polisish language
-   (To translate app for polish language use: python manage.py compilemessages) 
+   (To translate app for polish language use: python manage.py compilemessages, on windows you need https://docs.djangoproject.com/en/4.0/topics/i18n/translation/#gettext-on-windows  to properly work 
