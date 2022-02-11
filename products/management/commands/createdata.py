@@ -5,8 +5,15 @@ import faker.providers
 from django.core.management.base import BaseCommand
 from faker import Faker
 
+#We have to create at least 2 users
 
-#żeby testować usuń bazę i migracje inicjujące tabele i stwórz drugiego usera testowgo
+#Example when no exist data base:
+#with parameters: 2 random users, 15 random products, time period since: 2020,1,1 -  2021,12,12,
+#random quantity: 1: 500
+#random price: 1: 500
+
+#To create data use command: python manage.py createdata
+
 from ...models import Product, Purchase
 
 
@@ -49,16 +56,15 @@ class Command(BaseCommand):
         for _ in range(15):
             d = fake.pandas_products()
             Product.objects.create(name=d)
-            #ze slug trzeba uważać bo może być np: Polo Shirt albo Polo&Shirt
-            #ewentualnie można w modelu utworzyć slug
+
 
         start_date = datetime.date(2020,1,1)
         end_date = datetime.date(2021,12,12)
         for i in range(15):
             id = random.randint(1, 15)
             Purchase.objects.create(
-                product_id = id,     #foreign key trzeba utworzyć id
-                salesman_id=random.randint(1,2),    ########################### trzeba utworzyć drugiego dodatkowego usera w adminie + id(foreign key)
+                product_id = id,
+                salesman_id=random.randint(1,2),
                 quantity=(random.randint(1,500)),
                 price=(random.randint(1,500)),
                 date=fake.date_between_dates(start_date,end_date)
@@ -71,12 +77,14 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f"Number of products: {check_products}"))
 
 
-#https://faker.readthedocs.io/en/master/
 
 
 
 
-#żeby zbudować własnego providera:
-#Najpierw import faker.providers, buduje listy: PRODUCTS
+
+
+
+
+
 
 
