@@ -108,25 +108,3 @@ def translate(language):
 
 #https://docs.djangoproject.com/en/4.0/topics/i18n/translation/#gettext-on-windows
 #...binary installer
-
-
-
-# msgid "admin/"
-# msgstr "cześć"
-#
-# #: .\lang\templates\home.html:14 .\lang\templates\home.html:53
-# #: .\lang\templates\item.html:14 .\lang\views.py:33
-# msgid "hello"
-# msgstr "cześć"
-#
-# #: .\lang\templates\home.html:54
-# msgid "This page:  hello item page"
-# msgstr "Ta strona: cześć item strona"
-#
-# #: .\lang\templates\item.html:52
-# msgid "item page"
-# msgstr "ta strona"
-#
-# #: .\lang\templates\item.html:53 .\lang\views.py:34
-# msgid "This page:  hello item page translated to polish"
-# msgstr "Ta strona: cześć item strona przetłumaczona na polski"
